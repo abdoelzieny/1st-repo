@@ -1,0 +1,43 @@
+#cont{
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 'bye hey';
+    margin-top: 85px;
+}
+.lol{
+    border-radius: 15%;
+    align-content: center;
+    position: absolute
+}
+#hey{
+    background-color: aqua;
+    grid-area: hey;
+    width: 250px;
+    height: 300px;
+}
+#bye{
+    background-color: blue;
+    grid-area: bye;
+    animation-name: demo;
+    transform: rotateY(90deg);
+       width: 250px;
+    height: 300px;
+}
+#cont:hover #bye{
+    transform: rotateY(0deg);
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1.8s
+}
+#cont:hover #hey{
+    transform: rotateY(90deg);
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out
+
+}
+
+h1{
+    text-align: center;
+}
